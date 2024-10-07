@@ -7,6 +7,8 @@
 use bincode::{Decode, Encode};
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
+pub mod base;
+
 pub mod md_api {
     use crate::*;
     include!("md_impl.rs");
